@@ -1,0 +1,166 @@
+:root {
+  --principal: #0009;
+}
+
+body {
+  background: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+#titulo {
+  font-size: 38px;
+  color: var(--principal);
+}
+
+#reloj,
+#soyhenry {
+  position: absolute;
+  top: 0;
+  margin: 15px;
+}
+
+#soyhenry {
+  left: 0;
+}
+
+#soyhenry img {
+  height: 45px;
+}
+
+#reloj {
+  right: 0;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 630px) {
+  #soyhenry, #reloj {
+    display: none;
+  }
+}
+
+#inputContainer {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+#toDoInput {
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  width: 80%;
+  font-size: 20px;
+  font-family: inherit;
+  border: none;
+}
+
+#toDoInput::placeholder{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#addButton {
+  padding: 10px;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  background: var(--principal);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#toDoContainer {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+#noToDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--principal);
+}
+
+#noToDos img {
+  height: 200px;
+}
+
+.toDoShell {
+  width: 100%;
+  height: max-content;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-bottom: 10px;
+  color: rgb(68, 68, 68);
+}
+
+.toDoShell span {
+  width: 60%;
+  word-break: break-all;
+  text-align: center;  
+}
+
+.completeText {
+  color: rgb(145, 141, 141);
+  text-decoration: line-through;
+}
+
+.completeCheck {
+  color: var(--principal);
+}
+
+#footer {
+  background: var(--principal);
+  width: 100%;
+  position: absolute;
+  padding: 15px 0px;
+  bottom: 0;
+  left: 0;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer #createdBy {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 0px;
+}
+
+@media screen and (min-width: 450px) {
+  #footer {
+    flex-direction: row;
+  }  
+  #footer #createdBy {
+    padding: none;
+  }
+}
+
+#footer #redes {
+  font-size: 35px;
+}
+
+#footer #redes a {
+  color: white;
+}

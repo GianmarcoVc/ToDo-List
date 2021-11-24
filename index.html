@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>To-Do List</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+        <link rel="preload" href="./css/style.css" as="style">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./js/main.js" async></script>
+        <script src="https://kit.fontawesome.com/5948c38bba.js" crossorigin="anonymous" async></script>
+    </head>
+    <body onload="mueveReloj()">
+        <a id="soyhenry" href="https://www.soyhenry.com/" target="_blank_">
+            <img src="./assets/soyhenry.png" title="SoyHenry"/>
+        </a> 
+        <p id="reloj" onfocus="window.document.form_reloj.reloj.blur()">
+        <h1 id="titulo">TO-DO LIST</h1>
+        <div id="inputContainer">
+            <input type="text" id="toDoInput" placeholder="Enter your new task..." alt="Enter your new task" autofocus />
+            <button id="addButton" title="Add new task"><i class="fas fa-plus-circle"></i></button>
+        </div>
+        <div id="toDoContainer"></div>
+        <div id="noToDos">
+            <img src="assets/notodo.png">
+            <h3>You still have no homework to do</h3>
+        </div>
+        <div id="footer">
+            <div id="redes">
+                <a href="https://github.com/GianmarcoVc" target="_blank" title="My Github"><i class="fab fa-github"></i></a>
+            </div>
+            <span id="createdBy">&#9400 2021 by Gianmarco Valentin</span>    
+        </div>
+    </body>
+</html>
